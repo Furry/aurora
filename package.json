@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "tauri": "yarn tauri",
+    "go": "tauri build && .\\src-tauri\\target\\releases\\aurora.exe"
+  },
+  "name": "aurora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "walk-sync": "^2.2.0"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.6"
+  }
+}
