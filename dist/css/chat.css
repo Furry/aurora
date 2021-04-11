@@ -50,3 +50,11 @@ input {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
 }
+
+.chat-message {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.chat-message-incoming { float: left; }
+.chat-message-outgoing { float: right; }

@@ -59,10 +59,11 @@
     <!-- modernizr JS
         ============================================ -->
 
-    <!-- Chat CSS
+    <!-- Chat
         ============================================ -->
     <link rel="stylesheet" href="css/chat.css">
-
+    <script src="js/chat/chat.js"></script>
+    
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -220,12 +221,14 @@
                             </div>
                             <!-- <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div> -->
                             <div>
-                                <div class="chat-box" style="width: 100%;">
+                                <div class="chat-box" id="ChatBox" style="width: 100%;">
                                     <div class="chat-content-box">
-                                        <p class="chat-text">Well, that's certainly interesting</p>
+                                        <div class="chat-message chat-message-outgoing">
+                                            <p class="chat-text">Well, that's certainly interesting</p>
+                                        </div>
                                     </div>
                                     <div class="enter-message-main">
-                                        <input class="enter-message-box"
+                                        <input class="enter-message-box" id="SendMessageBox"
                                             placeholder="Message Shout Box..."
                                             autofocus maxlength="500"
                                             minlength="1"></input>
