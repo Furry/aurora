@@ -6,6 +6,8 @@
 mod cmd;
 mod net;
 
+use net::ws;
+
 fn main() {
   tauri::AppBuilder::new()
     .invoke_handler(|_webview, arg| {
