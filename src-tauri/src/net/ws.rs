@@ -1,8 +1,12 @@
+use serde::{ Deserialize, Serialize };
+
+#[derive(Serialize, Deserialize, Debug)]
 enum MessageType {
     ChatMessage,
     UserProfile
 }
 
+#[derive(Serialize, Deserialize, Debug)]
 struct ChatMessage {
     username: String,
     content: String,
@@ -11,6 +15,7 @@ struct ChatMessage {
     id: String
 }
 
+#[derive(Serialize, Deserialize, Debug)]
 struct UserProfile {
     avatarUrl: String,
     username: String,
@@ -25,11 +30,13 @@ struct UserProfile {
     dev: bool,
 }
 
+#[derive(Serialize, Deserialize, Debug)]
 union PayloadData {
     profile: UserProfile,
     message: ChatMessage
 }
 
+#[derive(Serialize, Deserialize, Debug)]
 struct IncomingMessage {
     which: MessageType,
     data: PayloadData
