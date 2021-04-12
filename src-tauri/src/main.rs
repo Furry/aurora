@@ -4,6 +4,7 @@
 )]
 
 mod cmd;
+mod net;
 
 fn main() {
   tauri::AppBuilder::new()
